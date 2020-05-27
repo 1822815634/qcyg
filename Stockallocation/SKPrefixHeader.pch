@@ -1,0 +1,24 @@
+//
+//  SKPrefixHeader.pch
+//  Stockallocation
+//
+//  Created by hxisWater on 2018/11/7.
+//  Copyright © 2018年 SoWhat. All rights reserved.
+//
+
+#ifndef SKPrefixHeader_pch
+#define SKPrefixHeader_pch
+#import "SKBaseViewController.h"
+#import "SVCCommunityApi.h"
+#import "UIView+WSYToast.h"
+#import <Masonry.h>
+#import "UIColor+HEX.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MJRefresh.h>
+#import "FMMacro_h.h"
+#import <MJExtension.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SKPrefixHeader_pch */

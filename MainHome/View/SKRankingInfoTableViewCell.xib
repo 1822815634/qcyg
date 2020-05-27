@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SKRankingInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="金色" translatesAutoresizingMaskIntoConstraints="NO" id="5FI-XJ-xFc">
+                        <rect key="frame" x="14" y="7.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="OEk-oD-lF0"/>
+                            <constraint firstAttribute="height" constant="35" id="mUg-Tf-LQ2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="方某某" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMG-bP-cV2">
+                        <rect key="frame" x="55" y="14" width="48" height="22.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.24705882352941178" green="0.2627450980392157" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-kZ-yQ7">
+                        <rect key="frame" x="319" y="14" width="35" height="22.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <color key="textColor" red="0.2470588235" green="0.26274509800000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBq-hB-KLO">
+                        <rect key="frame" x="0.0" y="48.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="f4U-oY-hKO"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azc-qJ-fAu">
+                        <rect key="frame" x="14" y="7.5" width="35" height="35"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                        <color key="textColor" red="0.25098039220000001" green="0.38431372549999998" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tMG-bP-cV2" firstAttribute="leading" secondItem="5FI-XJ-xFc" secondAttribute="trailing" constant="6" id="7QC-Bo-vSW"/>
+                    <constraint firstAttribute="trailing" secondItem="Soh-kZ-yQ7" secondAttribute="trailing" constant="21" id="9TH-f7-vXS"/>
+                    <constraint firstItem="5FI-XJ-xFc" firstAttribute="bottom" secondItem="azc-qJ-fAu" secondAttribute="bottom" id="CG6-30-Ugr"/>
+                    <constraint firstAttribute="bottom" secondItem="lBq-hB-KLO" secondAttribute="bottom" id="Kf0-Ya-s9d"/>
+                    <constraint firstItem="5FI-XJ-xFc" firstAttribute="top" secondItem="azc-qJ-fAu" secondAttribute="top" id="aai-6T-Ffx"/>
+                    <constraint firstItem="tMG-bP-cV2" firstAttribute="centerY" secondItem="5FI-XJ-xFc" secondAttribute="centerY" id="cYg-U3-bEP"/>
+                    <constraint firstItem="5FI-XJ-xFc" firstAttribute="trailing" secondItem="azc-qJ-fAu" secondAttribute="trailing" id="gcc-Ao-Xv3"/>
+                    <constraint firstItem="5FI-XJ-xFc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="jym-Bl-cJs"/>
+                    <constraint firstItem="lBq-hB-KLO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="keO-qS-EMH"/>
+                    <constraint firstAttribute="trailing" secondItem="lBq-hB-KLO" secondAttribute="trailing" id="nfY-ES-ARP"/>
+                    <constraint firstItem="5FI-XJ-xFc" firstAttribute="leading" secondItem="azc-qJ-fAu" secondAttribute="leading" id="uma-SH-rlX"/>
+                    <constraint firstItem="Soh-kZ-yQ7" firstAttribute="centerY" secondItem="5FI-XJ-xFc" secondAttribute="centerY" id="zNc-3C-k9s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="5FI-XJ-xFc" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="8j9-gT-QfH"/>
+            </constraints>
+            <connections>
+                <outlet property="centerImagell" destination="5FI-XJ-xFc" id="81b-qw-p9G"/>
+                <outlet property="nameLab" destination="tMG-bP-cV2" id="KC3-Fs-Vo9"/>
+                <outlet property="rateLab" destination="Soh-kZ-yQ7" id="sQD-0O-Mmd"/>
+                <outlet property="rowLab" destination="azc-qJ-fAu" id="g8R-cE-Lub"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="金色" width="66" height="66"/>
+    </resources>
+</document>

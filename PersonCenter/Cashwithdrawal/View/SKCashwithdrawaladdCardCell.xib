@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SKCashwithdrawaladdCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdA-ue-f22">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vv1-0L-xAb">
+                                <rect key="frame" x="5" y="10" width="365" height="59.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b67-tP-4kc">
+                                        <rect key="frame" x="22" y="18" width="85" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                        <color key="textColor" red="0.2666666667" green="0.25098039220000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="回答右" translatesAutoresizingMaskIntoConstraints="NO" id="Azx-fj-2el">
+                                        <rect key="frame" x="341" y="23.5" width="8" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="13" id="9sP-LB-qkz"/>
+                                            <constraint firstAttribute="width" constant="8" id="ZKo-kh-YcV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E16-EA-5xv">
+                                        <rect key="frame" x="17" y="30" width="0.0" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="CSe-fc-oHM"/>
+                                            <constraint firstAttribute="height" id="Zc9-C6-2bD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="b67-tP-4kc" firstAttribute="leading" secondItem="E16-EA-5xv" secondAttribute="trailing" constant="5" id="1g2-qK-dUc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Azx-fj-2el" secondAttribute="trailing" constant="16" id="2rv-qN-GUb"/>
+                                    <constraint firstItem="b67-tP-4kc" firstAttribute="centerY" secondItem="E16-EA-5xv" secondAttribute="centerY" id="JRN-Ql-fqv"/>
+                                    <constraint firstItem="Azx-fj-2el" firstAttribute="centerY" secondItem="E16-EA-5xv" secondAttribute="centerY" id="W3J-08-gG6"/>
+                                    <constraint firstItem="E16-EA-5xv" firstAttribute="centerY" secondItem="Vv1-0L-xAb" secondAttribute="centerY" id="YGG-oQ-d3T"/>
+                                    <constraint firstItem="E16-EA-5xv" firstAttribute="leading" secondItem="Vv1-0L-xAb" secondAttribute="leading" constant="17" id="w08-Kf-yNE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vv1-0L-xAb" firstAttribute="leading" secondItem="vdA-ue-f22" secondAttribute="leading" constant="5" id="Gmd-3G-eRB"/>
+                            <constraint firstItem="Vv1-0L-xAb" firstAttribute="top" secondItem="vdA-ue-f22" secondAttribute="top" constant="10" id="LWj-Mq-chr"/>
+                            <constraint firstAttribute="trailing" secondItem="Vv1-0L-xAb" secondAttribute="trailing" constant="5" id="UsP-I7-diI"/>
+                            <constraint firstAttribute="bottom" secondItem="Vv1-0L-xAb" secondAttribute="bottom" constant="10" id="zEa-LA-oAt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vdA-ue-f22" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="N3D-Hu-wZl"/>
+                    <constraint firstItem="vdA-ue-f22" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YRx-JG-E1P"/>
+                    <constraint firstAttribute="bottom" secondItem="vdA-ue-f22" secondAttribute="bottom" id="ZhO-TF-hVj"/>
+                    <constraint firstAttribute="trailing" secondItem="vdA-ue-f22" secondAttribute="trailing" id="dyW-4v-iJG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLab" destination="b67-tP-4kc" id="f8W-Q1-Pwd"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="回答右" width="10" height="16"/>
+    </resources>
+</document>

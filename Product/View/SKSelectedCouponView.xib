@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SKSelectedCouponView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.44999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iK-Tq-fuK">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.18823529410000001" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TZJ-Ug-U4N">
+                    <rect key="frame" x="50" y="243.5" width="275" height="180"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="7Cl-9t-PMJ"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5iK-Tq-fuK" secondAttribute="bottom" id="0nO-b3-5tl"/>
+                <constraint firstItem="5iK-Tq-fuK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6yr-Wd-EsX"/>
+                <constraint firstItem="5iK-Tq-fuK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PIZ-fx-vfs"/>
+                <constraint firstAttribute="trailing" secondItem="5iK-Tq-fuK" secondAttribute="trailing" id="UeJ-td-HTl"/>
+                <constraint firstAttribute="trailing" secondItem="TZJ-Ug-U4N" secondAttribute="trailing" constant="50" id="WVq-oI-IkC"/>
+                <constraint firstItem="TZJ-Ug-U4N" firstAttribute="centerY" secondItem="5iK-Tq-fuK" secondAttribute="centerY" id="cMY-gB-pgH"/>
+                <constraint firstItem="TZJ-Ug-U4N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="zNw-2m-3Te"/>
+            </constraints>
+            <connections>
+                <outlet property="mainTable" destination="TZJ-Ug-U4N" id="Vsk-yP-QiN"/>
+            </connections>
+        </view>
+    </objects>
+</document>
